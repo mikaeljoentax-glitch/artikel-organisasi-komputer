@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artikel: Organisasi Penyimpanan Komputer</title>
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --glass: rgba(255,255,255,0.03); }
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto; margin:0; background:linear-gradient(180deg,#071028 0%, #07172b 100%); color:#e6eef6; line-height:1.5}
+    header{padding:28px 20px; display:flex; gap:20px; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:14px; align-items:center}
+    .logo{font-weight:700; font-size:20px; background:linear-gradient(90deg,#9be7d9,#7dd3fc); -webkit-background-clip:text; background-clip:text; color:transparent}
+    .desc{color:var(--muted); font-size:13px}
+    nav.toc{padding:12px; background:var(--glass); border-radius:10px; display:flex; gap:10px; align-items:center}
+    main{display:grid; grid-template-columns:280px 1fr; gap:20px; padding:0 20px 80px}
+    aside{position:sticky; top:18px; height:calc(100vh - 36px); overflow:auto}
+    .toc-list{list-style:none; padding:12px; margin:0}
+    .toc-list a{display:block; padding:8px;border-radius:8px; text-decoration:none; color:var(--muted)}
+    .toc-list a:hover{background:rgba(255,255,255,0.03); color:var(--accent)}
+    article{padding:22px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px}
+    h1{margin:0 0 8px 0; font-size:28px}
+    .meta{color:var(--muted); font-size:13px; margin-bottom:18px}
+    section.card{margin-bottom:18px; padding:14px; background:rgba(255,255,255,0.02); border-radius:10px}
+    h2{margin:0 0 8px 0; font-size:18px}
+    .sub{color:var(--muted); font-size:14px; margin-bottom:8px}
+    dl{display:grid; gap:8px; margin:0}
+    dt{font-weight:600}
+    dd{margin:0 0 8px 0; color:#dbeafe}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    .badge{display:inline-block; padding:6px 10px; border-radius:999px; font-size:13px; background:rgba(255,255,255,0.02)}
+    footer{padding:18px 20px; color:var(--muted); font-size:13px}
+    .controls{display:flex; gap:8px; align-items:center}
+    button{background:transparent;border:1px solid rgba(255,255,255,0.06); padding:8px 12px;border-radius:8px;color:var(--muted); cursor:pointer}
+    button.primary{border-color:var(--accent); color:#031019; background:linear-gradient(90deg,#6ee7b7,#7dd3fc)}
+    pre{white-space:pre-wrap;background:#031124;padding:12px;border-radius:8px;color:var(--muted);font-size:13px}
+    @media (max-width:900px){ main{grid-template-columns:1fr; padding:0 14px 60px} aside{order:2; position:static; height:auto} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">Organisasi Penyimpanan</div>
+      <div class="desc">Ringkasan singkat berbagai media penyimpanan — HDD, SSD, NVMe, Optical, Flash, External, Memory Card, Magnetic Tape, & Cloud.</div>
+    </div>
+    <div class="controls">
+      <div class="badge">Memori Sekunder</div>
+      <button id="toggle-theme">Toggle Mode</button>
+      <button class="primary" id="print-btn">Cetak / Simpan PDF</button>
+    </div>
+  </header>
+
+  <main>
+    <aside>
+      <nav class="toc">
+        <ul class="toc-list">
+          <li><a href="#hdd">🧠 Hard Disk Drive (HDD)</a></li>
+          <li><a href="#ssd">⚡ Solid State Drive (SSD)</a></li>
+          <li><a href="#nvme">🚀 NVMe</a></li>
+          <li><a href="#optical">💿 Optical Disk</a></li>
+          <li><a href="#flash">🔌 Flash Drive</a></li>
+          <li><a href="#external">🧱 External Hard Disk</a></li>
+          <li><a href="#memcard">📱 Memory Card</a></li>
+          <li><a href="#magnetic">🧵 Magnetic Tape</a></li>
+          <li><a href="#cloud">☁️ Cloud Storage</a></li>
+          <li><a href="#kesimpulan">✅ Kesimpulan Umum</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <article>
+      <h1>Organisasi Penyimpanan Komputer</h1>
+      <div class="meta">Dokumen konversi — ringkasan tiap jenis media penyimpanan</div>
+
+      <section id="hdd" class="card">
+        <h2>🧠 Hard Disk Drive (HDD)</h2>
+        <p class="sub">Pengertian, fungsi, kelebihan & kekurangan, kesimpulan singkat.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Media penyimpanan magnetik yang menyimpan data pada piringan berputar dan dibaca oleh kepala pembaca (head).</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan sistem operasi, aplikasi, file pengguna, dan sebagai tempat backup.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Kapasitas besar dan harga terjangkau.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Kecepatan lebih lambat dan rentan rusak jika terguncang.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Masih dipakai untuk kapasitas besar dan ekonomi, walau kalah cepat dibanding SSD.</dd>
+        </dl>
+      </section>
+
+      <section id="ssd" class="card">
+        <h2>⚡ Solid State Drive (SSD)</h2>
+        <p class="sub">Penyimpanan berbasis memori flash tanpa piringan berputar.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Media penyimpanan berbasis chip memori flash, mirip flashdisk namun performa lebih tinggi.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan sistem operasi & program agar komputer lebih responsif; sering menggantikan HDD pada laptop modern.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Cepat, tahan guncangan, hemat energi.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Harga lebih mahal dan kapasitas relatif lebih kecil dibanding HDD tradisional.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Pilihan utama untuk performa tinggi pada perangkat modern.</dd>
+        </dl>
+      </section>
+
+      <section id="nvme" class="card">
+        <h2>🚀 NVMe (Non-Volatile Memory Express)</h2>
+        <p class="sub">Generasi SSD yang memanfaatkan jalur PCIe untuk kecepatan tinggi.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Antarmuka modern untuk SSD yang menggunakan PCIe untuk transfer data cepat.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan data dengan latensi rendah dan throughput tinggi; cocok untuk gaming, desain grafis, dan server.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Sangat cepat, responsif, dan efisien.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Harga lebih mahal dan membutuhkan slot NVMe pada motherboard.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Sesuai untuk pengguna yang butuh performa dan akses cepat ke data besar.</dd>
+        </dl>
+      </section>
+
+      <section id="optical" class="card">
+        <h2>💿 Optical Disk</h2>
+        <p class="sub">Media berbasis laser (CD, DVD, Blu-ray).</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Media penyimpanan yang dibaca/dikuasai menggunakan laser.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan film, musik, arsip, dan distribusi perangkat lunak.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Murah dan dapat ditulis ulang pada tipe RW.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Kapastias kecil dan mudah tergores.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Penggunaan menurun, namun masih berguna untuk distribusi dan backup jangka panjang.</dd>
+        </dl>
+      </section>
+
+      <section id="flash" class="card">
+        <h2>🔌 Flash Drive (USB Flashdisk)</h2>
+        <p class="sub">Perangkat penyimpanan portabel berbasis flash memory.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Perangkat penyimpanan kecil yang terhubung lewat USB.</dd>
+          <dt>Fungsi</dt>
+          <dd>Memindah data antar komputer dan menyimpan dokumen, musik, foto.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Kecil, mudah dibawa, tidak membutuhkan daya eksternal.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Mudah hilang, rentan virus, kapasitas terbatas.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Sangat praktis untuk transfer data kecil sampai sedang.</dd>
+        </dl>
+      </section>
+
+      <section id="external" class="card">
+        <h2>🧱 External Hard Disk</h2>
+        <p class="sub">Harddisk eksternal untuk penyimpanan tambahan atau backup.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Harddisk yang dihubungkan lewat USB untuk kebutuhan penyimpanan eksternal.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan data penting di luar komputer; media backup file besar.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Kapasitas besar dan mudah digunakan.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Lebih lambat dari HDD internal dan sensitif terhadap jatuh.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Solusi ideal untuk pengguna yang butuh penyimpanan besar dan portabel.</dd>
+        </dl>
+      </section>
+
+      <section id="memcard" class="card">
+        <h2>📱 Memory Card (Kartu Memori)</h2>
+        <p class="sub">Media kecil berbasis flash untuk kamera, ponsel, dan perangkat portabel lain.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Media penyimpanan kecil untuk perangkat portabel.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan foto, video, aplikasi; memperluas kapasitas perangkat.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Kecil, ringan, mudah dipindah-pindah.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Mudah rusak jika sering dicabut; kapasitas terbatas.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Sangat berguna untuk perangkat portabel yang butuh penyimpanan ekstra.</dd>
+        </dl>
+      </section>
+
+      <section id="magnetic" class="card">
+        <h2>🧵 Magnetic Tape</h2>
+        <p class="sub">Pita magnetik untuk backup dan arsip jangka panjang.</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Media penyimpanan pita magnetik yang digunakan untuk backup skala besar.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan cadangan data pada skala besar untuk lembaga dan perusahaan.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Tahan lama dan murah untuk penyimpanan besar.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Akses data lambat dan tidak praktis untuk penggunaan harian.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Masih relevan untuk backup besar meskipun termasuk teknologi lama.</dd>
+        </dl>
+      </section>
+
+      <section id="cloud" class="card">
+        <h2>☁️ Cloud Storage (Penyimpanan Awan)</h2>
+        <p class="sub">Penyimpanan online yang diakses lewat internet (Google Drive, Dropbox, OneDrive).</p>
+        <dl>
+          <dt>Pengertian</dt>
+          <dd>Penyimpanan di server internet yang memungkinkan akses dari mana saja.</dd>
+          <dt>Fungsi</dt>
+          <dd>Menyimpan file online, memudahkan berbagi & sebagai backup tambahan jika penyimpanan fisik rusak.</dd>
+          <dt>Kelebihan</dt>
+          <dd>Mudah diakses dan tidak butuh perangkat tambahan fisik.</dd>
+          <dt>Kekurangan</dt>
+          <dd>Membutuhkan koneksi internet dan memiliki risiko keamanan data.</dd>
+          <dt>Kesimpulan</dt>
+          <dd>Solusi modern untuk penyimpanan fleksibel dan kolaborasi.</dd>
+        </dl>
+      </section>
+
+      <section id="kesimpulan" class="card">
+        <h2>✅ Kesimpulan Umum</h2>
+        <p>Memori sekunder penting untuk penyimpanan permanen dalam sistem komputer. Setiap media punya trade-off: kapasitas vs kecepatan vs portabilitas vs harga vs ketahanan. Pilih sesuai kebutuhan — backup jangka panjang gunakan magnetic tape/optical, kapasitas besar gunakan HDD/external, performa tinggi gunakan SSD/NVMe, dan mobilitas gunakan flash/memory card atau cloud untuk fleksibilitas.</p>
+      </section>
+
+      <footer>
+        <div>Versi: Convert dari dokumen sumber • Dibuat otomatis menjadi HTML.</div>
+        <div style="margin-top:8px;color:var(--muted);">Mau export ke file .html? Tekan tombol di atas lalu simpan melalui fitur print browser (Save as PDF / Print to file).</div>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    document.getElementById('print-btn').addEventListener('click', ()=> window.print());
+    // simple theme toggle (light/dark) by inverting colors
+    document.getElementById('toggle-theme').addEventListener('click', ()=>{
+      if(document.documentElement.style.filter === 'invert(1)') document.documentElement.style.filter = '';
+      else document.documentElement.style.filter = 'invert(1) hue-rotate(180deg)';
+    });
+    // smooth in-page navigation
+    document.querySelectorAll('.toc-list a').forEach(a=> a.addEventListener('click', e=>{
+      e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth', block:'start'});
+    }));
+  </script>
+</body>
+</html>
